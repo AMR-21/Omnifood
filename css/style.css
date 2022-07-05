@@ -1,10 +1,11 @@
-/* Main Nav */
-header {
+/**************************/
+/* HEADER SECTION */
+/**************************/
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
-
   /* To make it sticky */
   height: 9.6rem;
   padding: 0 4.8rem;
@@ -15,13 +16,14 @@ header {
 }
 
 .main-nav {
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 3.2rem;
 }
 
-.nav-link:visited,
-.nav-link:link {
+.main-nav-link:visited,
+.main-nav-link:link {
   display: inline-block;
   text-decoration: none;
   color: #333;
@@ -30,32 +32,24 @@ header {
   transition: all 0.3s;
 }
 
-.nav-link:active,
-.nav-link:hover {
+.main-nav-link:active,
+.main-nav-link:hover {
   color: #cf711f;
 }
 
-.cta-btn:link,
-.cta-btn:visited {
-  color: #fff;
-  background-color: #e67e22;
+.btn.btn-full.cta-btn {
   padding: 1.2rem 2.4rem;
-  border-radius: 9px;
-}
-
-.cta-btn:hover,
-.cta-btn:active {
-  background-color: #cf711f;
 }
 
 /**************************/
-/* hero */
+/* HERO SECTION  */
 /**************************/
 
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
@@ -68,16 +62,12 @@ header {
 
 .hero-text {
   font-size: 2rem;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 4.8rem;
 }
 
 .hero-img-box img {
   width: 100%;
-}
-
-.hero-text-box .btn {
-  margin-right: 1.6rem;
 }
 
 .delivered-meals {
@@ -111,4 +101,177 @@ header {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/**************************/
+/* Feature in section */
+/**************************/
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured {
+  display: block;
+  text-align: center;
+  color: #888;
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+.featured-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.featured-logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/**************************/
+/* HOW IT WORKS SECTION */
+/**************************/
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-img {
+  width: 35%;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #ddd;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box::after,
+.step-img-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::after {
+  /* % to make it flexible like image */
+  width: 60%;
+  /* Make it square , 60% of parent element width*/
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.step-img-box::before {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+/**************************/
+/* MEALS SECTION */
+/**************************/
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 8%);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 6%);
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.tag-vegetarian {
+  background-color: #51cf66;
+}
+
+.tag-vegan {
+  background-color: #84de93;
+}
+
+.tag-paleo {
+  background-color: #f8f80d;
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-info {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.meal-img {
+  width: 100%;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
