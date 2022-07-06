@@ -39,6 +39,8 @@
 
 .btn.btn-full.cta-btn {
   padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 /**************************/
@@ -272,6 +274,340 @@
 
 .meal-img {
   width: 100%;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
+}
+
+/**************************/
+/* TESTIMONIALS SECTION */
+/**************************/
+
+.section-testimonials {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  background-color: #fdf2e9;
+}
+
+.testimonial-text-box {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8rem;
+  row-gap: 4.8rem;
+}
+
+.customer-img {
+  height: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-description {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin-bottom: 1.6rem;
+}
+
+.customer-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery-img {
+  width: 100%;
+  display: block;
+  transition: all 0.4s;
+}
+
+.testimonial-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-img:hover {
+  transform: scale(1.1);
+}
+
+/**************************/
+/* PRICING SECTION */
+/**************************/
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plans {
+  justify-items: center;
+}
+
+.plan {
+  text-align: center;
+  padding: 4.8rem;
+  border-radius: 11px;
+  width: 75%;
+}
+
+.plan-starter {
+  border: 2px solid #fdf2e9;
+  justify-self: end;
+}
+
+.plan-complete {
+  border: 2px solid #fae5d3;
+  justify-self: start;
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #cf711f;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-weight: 600;
+  font-size: 6.2rem;
+  margin-left: 0.8rem;
+}
+
+.plan-description {
+  font-size: 1.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.plan-complete::after {
+  position: absolute;
+  content: "Best value";
+  background-color: #ffd43b;
+  color: #333;
+  padding: 0.8rem 8rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  top: 6%;
+  right: -8rem;
+  transform: rotate(45deg);
+}
+
+.pricing-info {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/**************************/
+/* Features SECTION */
+/**************************/
+
+.section-features {
+  padding: 0 0 9.6rem 0;
+}
+
+.feature-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #e67e22;
+  display: inline-block;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: #333;
+}
+
+.feature-description {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+/**************************/
+/* CTA SECTION */
+/**************************/
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-text-box .secondary-heading {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+
+.cta-description {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #45260a;
+  margin-bottom: 4.8rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 152, 78, 0.4),
+      rgba(230, 126, 34, 0.4)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #45260a;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: #45260a;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #bbb;
+}
+
+.btn.btn-form {
+  background-color: #45260a;
+  padding: 1.2rem;
+  border: none;
+  font-family: inherit;
+  align-self: end;
+  color: #fdf2e9;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(255, 255, 255, 0.5);
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #757171;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.footer-link:active,
+.footer-link:hover {
+  color: #333;
+}
+
+.grid-footer {
+  grid-template-columns: 1.5fr 1.5fr repeat(3, 1fr);
+}
+
+.logo-col .logo {
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.social-logo {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #757171;
+}
+
+.col-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.6rem;
+}
+
+.contacts {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.address {
+  color: #757171;
+  margin-bottom: 2.4rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }

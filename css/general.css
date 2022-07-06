@@ -26,6 +26,7 @@ subheadings 0.75px
 
 - Shades: 
 #cf711f
+#45260A
 
 - Accents:
 - Greys
@@ -33,6 +34,7 @@ subheadings 0.75px
 #333
 #888
 #ddd
+#bbb
 
 
 ---Shadows
@@ -123,6 +125,10 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .grid-center-vertical {
   align-items: center;
 }
@@ -165,18 +171,17 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-.margin-right-sm {
-  margin-right: 1.6rem;
+.btn-form {
+  background-color: #45260a;
+  padding: 1.2rem;
+  font-family: inherit;
+  align-self: end;
+  color: #fdf2e9;
 }
 
-.margin-bottom-md {
-  margin-bottom: 4.8rem;
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.btn-form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .list {
@@ -202,6 +207,7 @@ body {
 .link:link,
 .link:visited {
   display: inline-block;
+
   text-decoration: none;
   font-size: 1.8rem;
   border-bottom: 1px solid currentColor;
@@ -212,6 +218,29 @@ body {
 
 .link:hover,
 .link:active {
-  border-bottom: none;
+  border-bottom: 1px solid transparent;
   color: #cf711f;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(230, 126, 34, 0.5);
 }
