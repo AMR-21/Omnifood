@@ -415,14 +415,6 @@
   font-size: 1.6rem;
 }
 
-/**************************/
-/* Features SECTION */
-/**************************/
-
-.section-features {
-  padding: 0 0 9.6rem 0;
-}
-
 .feature-icon {
   width: 3.2rem;
   height: 3.2rem;
@@ -519,20 +511,6 @@
 
 .cta-form input::placeholder {
   color: #bbb;
-}
-
-.btn.btn-form {
-  background-color: #45260a;
-  padding: 1.2rem;
-  border: none;
-  font-family: inherit;
-  align-self: end;
-  color: #fdf2e9;
-}
-
-.btn-form:hover {
-  background-color: #fff;
-  color: #555;
 }
 
 .cta *:focus {
