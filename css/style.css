@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
+  position: relative;
   /* To make it sticky */
   height: 9.6rem;
   padding: 0 4.8rem;
@@ -19,7 +20,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:visited,
@@ -41,6 +42,42 @@
   padding: 1.2rem 2.4rem;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
 }
 
 /**************************/
@@ -129,6 +166,7 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .featured-logos img {
   height: 3.2rem;
   filter: brightness(0);
@@ -344,8 +382,11 @@
   padding: 9.6rem 0;
 }
 
-.plan {
+.plan-header {
   text-align: center;
+}
+
+.plan {
   padding: 4.8rem;
   border-radius: 11px;
   width: 75%;
@@ -410,6 +451,10 @@
   font-size: 1.6rem;
 }
 
+.plan-cta {
+  text-align: center;
+}
+
 .feature-icon {
   width: 3.2rem;
   height: 3.2rem;
@@ -471,7 +516,7 @@
       rgba(235, 152, 78, 0.4),
       rgba(230, 126, 34, 0.4)
     ),
-    url("../img/eating.jpg");
+    url("../img/eating.webp");
   background-size: cover;
   background-position: center;
 }
@@ -585,6 +630,10 @@ footer {
   font-size: 1.6rem;
   line-height: 1.7;
   font-style: normal;
+}
+
+.address {
+  margin-bottom: 2.4rem;
 }
 
 .contact-methods {

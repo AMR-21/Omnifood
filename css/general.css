@@ -55,6 +55,8 @@ Default:9px
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -62,6 +64,7 @@ body {
   color: #555;
   line-height: 1;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 /* ****************** */
@@ -200,6 +203,7 @@ body {
   align-items: center;
   gap: 1.6rem;
   font-size: 1.8rem;
+  line-height: 1.4;
 }
 
 .list-icon {
@@ -245,6 +249,7 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 *:focus {
