@@ -1,5 +1,5 @@
 # Omnifood
   
-This project is about replication of www.omnifood.dev site for the purpose of practicing HTML and CSS. 
+This project is a complete replication of www.omnifood.dev site for the purpose of practicing HTML and CSS. 
 
-© Jonas Schmedtmann
+Design © Jonas Schmedtmann
