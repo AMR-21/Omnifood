@@ -1,4 +1,4 @@
 # Omnifood
   
-This project completely replicates the www.omnifood.dev site to practice HTML, CSS, and JavaScript.
+This project completely replicates the [Omnifood web page](https://omnifood.dev/) to practice HTML, CSS, and JavaScript.
 
